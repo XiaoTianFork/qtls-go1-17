@@ -8,6 +8,7 @@ import (
 	"crypto/elliptic"
 	"crypto/hmac"
 	"errors"
+	"github.com/xiaotianfork/qtls-go1-17/sm2"
 	"hash"
 	"io"
 	"math/big"
@@ -144,6 +145,8 @@ func curveForCurveID(id CurveID) (elliptic.Curve, bool) {
 		return elliptic.P384(), true
 	case CurveP521:
 		return elliptic.P521(), true
+	case CurveSM2:
+		return sm2.P256Sm2(), true
 	default:
 		return nil, false
 	}
