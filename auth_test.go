@@ -5,7 +5,7 @@
 package qtls
 
 import (
-	"github.com/xiaotianfork/qtls-go1-17/x509"
+	"github.com/xiaotianfork/q-tls-common/x509"
 	"testing"
 )
 

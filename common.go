@@ -18,14 +18,14 @@ import (
 	"crypto/tls"
 	"errors"
 	"fmt"
-	"github.com/xiaotianfork/qtls-go1-17/sm2"
+	"github.com/xiaotianfork/q-tls-common/sm2"
 	"io"
 	"net"
 	"strings"
 	"sync"
 	"time"
 
-	"github.com/xiaotianfork/qtls-go1-17/x509"
+	"github.com/xiaotianfork/q-tls-common/x509"
 )
 
 const (
@@ -350,7 +350,7 @@ type clientSessionState struct {
 // goroutines. Up to TLS 1.2, only ticket-based resumption is supported, not
 // SessionID-based resumption. In TLS 1.3 they were merged into PSK modes, which
 // are supported via this interface.
-//go:generate sh -c "mockgen -package qtls -destination mock_client_session_cache_test.go github.com/marten-seemann/qtls-go1-17 ClientSessionCache"
+//go:generate sh -c "mockgen -package qtls -destination mock_client_session_cache_test.go github.com/marten-seemann/q-tls-common ClientSessionCache"
 type ClientSessionCache = tls.ClientSessionCache
 
 // SignatureScheme is a tls.SignatureScheme

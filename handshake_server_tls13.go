@@ -11,7 +11,7 @@ import (
 	"crypto/hmac"
 	"crypto/rsa"
 	"errors"
-	"github.com/xiaotianfork/qtls-go1-17/x509"
+	"github.com/xiaotianfork/q-tls-common/x509"
 	"hash"
 	"io"
 	"sync/atomic"

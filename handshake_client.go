@@ -14,7 +14,7 @@ import (
 	"crypto/subtle"
 	"errors"
 	"fmt"
-	"github.com/xiaotianfork/qtls-go1-17/sm2"
+	"github.com/xiaotianfork/q-tls-common/sm2"
 	"hash"
 	"io"
 	"net"
@@ -24,7 +24,7 @@ import (
 
 	"golang.org/x/crypto/cryptobyte"
 
-	"github.com/xiaotianfork/qtls-go1-17/x509"
+	"github.com/xiaotianfork/q-tls-common/x509"
 )
 
 const clientSessionStateVersion = 1

@@ -8,7 +8,7 @@ import (
 	"crypto/elliptic"
 	"crypto/hmac"
 	"errors"
-	"github.com/xiaotianfork/qtls-go1-17/sm2"
+	"github.com/xiaotianfork/q-tls-common/sm2"
 	"hash"
 	"io"
 	"math/big"

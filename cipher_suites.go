@@ -13,14 +13,14 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"fmt"
-	"github.com/xiaotianfork/qtls-go1-17/sm4"
+	"github.com/xiaotianfork/q-tls-common/sm4"
 	"hash"
 	"runtime"
 
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/sys/cpu"
 
-	"github.com/xiaotianfork/qtls-go1-17/x509"
+	"github.com/xiaotianfork/q-tls-common/x509"
 )
 
 // CipherSuite is a TLS cipher suite. Note that most functions in this package

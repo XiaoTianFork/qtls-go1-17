@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	X "github.com/xiaotianfork/qtls-go1-17/x509"
+	X "github.com/xiaotianfork/q-tls-common/x509"
 	"golang.org/x/crypto/curve25519"
 )
 
