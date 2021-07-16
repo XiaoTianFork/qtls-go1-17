@@ -13,13 +13,13 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 	"fmt"
-	"github.com/xiaotianfork/q-tls-common/sm4"
 	"hash"
 	"runtime"
 
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/sys/cpu"
 
+	"github.com/xiaotianfork/q-tls-common/sm4"
 	"github.com/xiaotianfork/q-tls-common/x509"
 )
 
@@ -583,7 +583,6 @@ func aeadSm4GCMTLS13(key, nonceMask []byte) aead {
 	copy(ret.nonceMask[:], nonceMask)
 	return ret
 }
-
 
 func aeadChaCha20Poly1305(key, nonceMask []byte) aead {
 	if len(nonceMask) != aeadNonceLength {
