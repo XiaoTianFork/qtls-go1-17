@@ -20,6 +20,10 @@ func toCryptoHash(h x509.Hash) crypto.Hash {
 	return *(*crypto.Hash)(&h)
 }
 
+func toTlsCertificate(c *Certificate) *tls.Certificate {
+	return (*tls.Certificate)(unsafe.Pointer(c))
+}
+
 func fromConfig(c *tls.Config) *Config {
 	return (*Config)(unsafe.Pointer(c))
 }
